@@ -1,0 +1,220 @@
+.fa-blog {
+  font-size: 24px;
+  color: #1296DB;
+}
+
+.fa-bilibili {
+  font-size: 24px;
+  color: #1296DB;
+}
+.fa-qq {
+  font-size: 24px;
+  color: #1296DB;
+}
+
+// 博客背景，仿照博客园BOOK主题
+body {
+  background: var(--body-bg-color);
+  box-sizing: border-box;
+  color: var(--text-color);
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 2;
+  min-height: 100%;
+  position: relative;
+  transition: padding 0.2s ease-in-out;
+  background: rgb(201, 200, 183)url(https://wangguanjingji.oss-cn-beijing.aliyuncs.com/picture/%E5%8D%9A%E5%AE%A2%E5%9B%ADBOOK%E4%B8%BB%E9%A2%98%E8%83%8C%E6%99%AF.png) repeat-y left;
+  // background: rgb(201, 200, 183)url(https://img2022.cnblogs.com/blog/2666175/202203/2666175-20220325225640565-1230988323.png) repeat-y left;
+}
+
+p {
+  margin: 10px 0;
+  line-height: 1.5;
+  font-size: 13px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: sans-serif,Verdana, 'PingFang SC', 'Microsoft YaHei';
+  font-weight: bold;
+  margin: 0;
+
+  // color: #666;
+  // line-height: 1.4;
+  // font-weight: 700;
+  // margin: 30px 0 10px 0;
+}
+h1{
+  font-size: 30px;
+  margin:5px 0 5px;
+  text-align: center;
+  // background: linear-gradient(to bottom,transparent 60%,rgba(189,202,219,.3) 0) no-repeat;
+  // width: auto;
+  // display: inline;
+}
+h2 {
+  margin:5px 0 5px;
+  font-size: 25px;
+  border-top: 1px solid #666;
+  text-align: center;
+  // background: linear-gradient(to bottom,transparent 60%,rgba(189,202,219,.3) 0) no-repeat;
+  // width: auto;
+  // display: inline;
+}
+h3 {
+  font-size: 20px;
+  border-top: 1px solid #aaa;
+}
+h4 {
+  font-size: 15px;
+  border-top: 1px solid rgb(0, 0, 0);
+}
+h5 {
+  font-size: 14px;
+}
+h1 a,
+h1 a:link,
+h1 a:visited,
+h1 a:active,
+h1 a:hover {
+  font-family: verdana, arial, sans-serif;
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+  border: none;
+}
+hr{
+	border-top: 1px double transparent;
+  border-bottom: 1px double transparent;
+  background-color:skyblue;
+	text-align: center;
+  margin: 60px 0;
+  background-image: none;
+}
+hr:after {
+	// content: '\002665';
+	display: inline-block;
+	position: relative;
+	top: -15px;
+	padding: 30px 10px;
+	background: skyblue;
+	color: #8c8b8b;
+	font-size: 18px;
+}
+// 引用样式
+blockquote {
+    font-family: sans-serif,'Mono', 'Times New Roman';
+    margin: 1rem 0 1rem 0rem;
+    position: relative;
+    // border-left: 4px solid #7397CA;
+    border-left: 4px solid #FDF1D5;
+    padding: 10px 15px;
+    color: #777;
+    background: #FDF1D5;
+}
+
+// 代码 样式行号
+figure.highlight .gutter pre {
+  background: var(--highlight-gutter-background);
+  color: var(--highlight-gutter-foreground);
+  padding-left: 0px;
+  padding-right: 10px;
+  text-align: right;
+}
+// 代码 样式背景
+code, {
+  background-color: #7397ca;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1.8;
+  padding: 2px 7px 2px 7px;
+}
+pre, code {
+    font-family: sans-serif,monospace, 'PingFang SC', 'Microsoft YaHei';
+}
+// kbd, figure.highlight, pre {
+    // background-color: #7397ca;
+    // border-radius: 4px;
+    // color: #fff;
+    // font-weight: bold;
+    // line-height: 1.8;
+    // padding: 2px 7px 2px 7px;
+    // background: #f7f7f7;
+    // padding-left: 0px;
+    // width: 100%;
+// }
+// 代码块颜色
+.hljs-attribute, .hljs-doctag, .hljs-keyword, .hljs-meta .hljs-keyword, .hljs-name, .hljs-selector-tag {
+    font-weight: 700;
+}
+
+
+
+//首页文章样式，
+.main-inner .post-block {
+  margin-bottom: 18px;
+	// // background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/279756/2017_bg.png);
+  // background-image: url(https://wangguanjingji.oss-cn-beijing.aliyuncs.com/picture/%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E9%A6%96%E9%A1%B5%E6%A0%B7%E5%BC%8F.jpg);
+	// background-size: cover;
+
+	// border-radius: 5px;
+
+	// box-shadow: -2px 3px 6px 0 rgba(92, 15, 15, 0.54);
+	// overflow: hidden;
+
+  background: var(--content-bg-color);
+    border-radius: initial;
+    box-shadow: 0 2px 2px 0 #ababab, 0 3px 1px -2px rgb(182 36 36 / 6%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+    padding: 39px;
+  
+}
+
+.btn {
+    background: var(--content-bg-color);
+    color: var(--btn-default-bg);
+}
+
+
+//首页文章标题，
+.posts-expand .post-title{
+  margin-top: -24px;  
+  border: none;
+}
+//首页文章时间，
+.posts-expand .post-header {
+    font-size: 1.125em;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+//首页文章分割线
+.post-eof {
+    background: #ccc;
+    height: 1px;
+    margin: 10px auto 3px;
+    width: 0%;
+}
+
+//文章页 h1
+.posts-expand h1.post-title{
+  font-size: 30px;
+  margin-top: -30px;
+}
+
+//侧边栏
+.sidebar {
+    background: #f9f9f9;
+    bottom: 0;
+    position: fixed;
+    top: 0;
+    transition: all 0.2s ease-out;
+    width: 270px;
+    z-index: 20;
+}
+
+
+
